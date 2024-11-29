@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <span class="d-flex justify-content-center align-items-center d-none" id="welcomeUser">
+        <div class="fixed-top shadow-sm"><button class="btn btn-outline-info my-3" onclick="logout">Click here to logout</button></div>
+        <div id="welcomeMessage"></div>
+    </span>
+    <section>
+        <div class="container py-5">
+            <div id="loginInputs" class="w-75 mx-auto p-5 text-center">
+                <h1 class="animate__animated animate__bounce">Smart Login System</h1>
+
+                
+                <input id="signUpName" class="form-control my-3 bg-transparent text-white animate__animated animate__backInDown" placeholder="Enter your name" type="text">
+                <input id="signUpEmail" class="form-control my-3 bg-transparent text-white animate__animated animate__rubberBand" placeholder="Enter your email" type="text">
+                <input id="signUpPassword" class="form-control my-3 bg-transparent text-white animate__animated animate__backInUp" placeholder="Enter your password" type="password">
+                <p id="userMessage"></p>
+
+                <button onclick="signUp()" class="btn btn-outline-info w-100 my-3 animate__animated animate__rotateIn">Sign Up</button>
+                <p class="text-white animate__animated animate__rollIn">You have an account?
+                <a class="text-white animate__animated animate__zoomIn" href="./index.html">Signin</a>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
